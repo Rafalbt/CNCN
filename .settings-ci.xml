@@ -1,0 +1,21 @@
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://maven.apache.org/POM/4.0.0"
+          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>CN Repository - Releases</id>
+            <username>deployment</username>
+            <password>CONtent</password>
+        </server>
+        <server>
+            <id>CN Repository - Snapshots</id>
+            <username>deployment</username>
+            <password>CONtent</password>
+        </server>
+        <server>
+            <id>CN Repository - thirdParty</id>
+            <username>deployment</username>
+            <password>CONtent</password>
+        </server>
+    </servers>
+</settings>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: darkslategray;
+            color: white;
+        }
+        label {
+            margin-top: 10px;
+        }
+
+        input {
+            margin-top: 5px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h3>http://localhost:8080/api/v1/lists/add</h3>
+
+    <form action="http://localhost:8080/api/v1/lists/add" method="post" enctype="multipart/form-data">
+        <label for="file">File:</label>
+        <input id="file" type="file" name="file">
+
+        <label for="sheetIndex">Sheet Index:</label>
+        <input id="sheetIndex" type="number" name="sheetIndex" value="0">
+
+        <label for="startRow">Start Row:</label>
+        <input id="startRow" type="number" name="startRow" value="1">
+
+        <label for="objectsColumn">Objects Column:</label>
+        <input id="objectsColumn" type="text" name="objectsColumn" value="B" maxlength="1">
+
+        <label for="prefixesColumn">Prefixes Column:</label>
+        <input id="prefixesColumn" type="text" name="prefixesColumn" value="C" maxlength="1">
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
